@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62C0048996966649FC0ACEA6 /* Pods_BMOApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A782FB73408DCDCA1F8457B /* Pods_BMOApp.framework */; };
 		AE131E68241BC78B00DB615E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE131E67241BC78B00DB615E /* AppDelegate.swift */; };
 		AE131E6A241BC78B00DB615E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE131E69241BC78B00DB615E /* SceneDelegate.swift */; };
 		AE131E6C241BC78B00DB615E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE131E6B241BC78B00DB615E /* ViewController.swift */; };
 		AE131E6F241BC78C00DB615E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE131E6D241BC78C00DB615E /* Main.storyboard */; };
 		AE131E71241BC78D00DB615E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE131E70241BC78D00DB615E /* Assets.xcassets */; };
 		AE131E74241BC78D00DB615E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE131E72241BC78D00DB615E /* LaunchScreen.storyboard */; };
+		AE131E7D241CCF0000DB615E /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE131E7C241CCF0000DB615E /* FirstVC.swift */; };
+		AE131E7F241CCF0D00DB615E /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE131E7E241CCF0D00DB615E /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0891820B468D03820C805A27 /* Pods-BMOApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMOApp.debug.xcconfig"; path = "Target Support Files/Pods-BMOApp/Pods-BMOApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4A782FB73408DCDCA1F8457B /* Pods_BMOApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMOApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE131E64241BC78B00DB615E /* BMOApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMOApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE131E67241BC78B00DB615E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE131E69241BC78B00DB615E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		AE131E70241BC78D00DB615E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE131E73241BC78D00DB615E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE131E75241BC78D00DB615E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE131E7C241CCF0000DB615E /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		AE131E7E241CCF0D00DB615E /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		ECCC4E2CB26CD8D78627D9E8 /* Pods-BMOApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMOApp.release.xcconfig"; path = "Target Support Files/Pods-BMOApp/Pods-BMOApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C0048996966649FC0ACEA6 /* Pods_BMOApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7140153142942AEF3DD7B1E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A782FB73408DCDCA1F8457B /* Pods_BMOApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		794A17CE2092CA60DFEDC22F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0891820B468D03820C805A27 /* Pods-BMOApp.debug.xcconfig */,
+				ECCC4E2CB26CD8D78627D9E8 /* Pods-BMOApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE131E5B241BC78B00DB615E = {
 			isa = PBXGroup;
 			children = (
 				AE131E66241BC78B00DB615E /* BMOApp */,
 				AE131E65241BC78B00DB615E /* Products */,
+				794A17CE2092CA60DFEDC22F /* Pods */,
+				7140153142942AEF3DD7B1E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		AE131E66241BC78B00DB615E /* BMOApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE131E7B241CCEF100DB615E /* VC */,
 				AE131E67241BC78B00DB615E /* AppDelegate.swift */,
 				AE131E69241BC78B00DB615E /* SceneDelegate.swift */,
 				AE131E6B241BC78B00DB615E /* ViewController.swift */,
@@ -67,6 +96,15 @@
 			path = BMOApp;
 			sourceTree = "<group>";
 		};
+		AE131E7B241CCEF100DB615E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AE131E7C241CCF0000DB615E /* FirstVC.swift */,
+				AE131E7E241CCF0D00DB615E /* SecondVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE131E78241BC78D00DB615E /* Build configuration list for PBXNativeTarget "BMOApp" */;
 			buildPhases = (
+				248F85B914D666571AE5D934 /* [CP] Check Pods Manifest.lock */,
 				AE131E60241BC78B00DB615E /* Sources */,
 				AE131E61241BC78B00DB615E /* Frameworks */,
 				AE131E62241BC78B00DB615E /* Resources */,
+				43408FA40023BBF7D222C91E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +173,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		248F85B914D666571AE5D934 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMOApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43408FA40023BBF7D222C91E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMOApp/Pods-BMOApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMOApp/Pods-BMOApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMOApp/Pods-BMOApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE131E60241BC78B00DB615E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE131E6C241BC78B00DB615E /* ViewController.swift in Sources */,
+				AE131E7F241CCF0D00DB615E /* SecondVC.swift in Sources */,
+				AE131E7D241CCF0000DB615E /* FirstVC.swift in Sources */,
 				AE131E68241BC78B00DB615E /* AppDelegate.swift in Sources */,
 				AE131E6A241BC78B00DB615E /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		AE131E79241BC78D00DB615E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0891820B468D03820C805A27 /* Pods-BMOApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		AE131E7A241BC78D00DB615E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECCC4E2CB26CD8D78627D9E8 /* Pods-BMOApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

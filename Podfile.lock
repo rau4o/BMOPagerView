@@ -1,0 +1,16 @@
+PODS:
+  - BmoViewPager (4.2.2)
+
+DEPENDENCIES:
+  - BmoViewPager (~> 4.2.2)
+
+SPEC REPOS:
+  trunk:
+    - BmoViewPager
+
+SPEC CHECKSUMS:
+  BmoViewPager: f77aa760d28e908af3dcab76d5cb04a1379e505b
+
+PODFILE CHECKSUM: f5fcdabf17126ac17d5bf71f3ed55010c8c67aca
+
+COCOAPODS: 1.8.4
